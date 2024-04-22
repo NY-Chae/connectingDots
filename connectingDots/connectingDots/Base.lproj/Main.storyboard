@@ -23,6 +23,9 @@
                                 <state key="normal" title="PLUS">
                                     <color key="titleColor" systemColor="systemIndigoColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="incrementButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xde-5Q-J4V"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDm-Zd-GBl">
                                 <rect key="frame" x="123" y="584" width="147" height="86"/>
@@ -32,6 +35,9 @@
                                 <state key="normal" title="GO NEXT">
                                     <color key="titleColor" systemColor="systemPinkColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NCf-1f-0cZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkr-5L-D6O">
                                 <rect key="frame" x="219" y="383" width="124" height="86"/>
@@ -40,6 +46,9 @@
                                 <state key="normal" title="MINUS">
                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="decrementButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1va-ut-jaN"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaO-bI-X3m">
                                 <rect key="frame" x="181" y="195" width="31" height="60"/>
@@ -61,6 +70,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="I3L-gG-Zu2" secondAttribute="bottom" constant="349" id="zoe-f1-445"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countLabel" destination="SaO-bI-X3m" id="s9X-gj-e7I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -90,6 +102,9 @@
                             <constraint firstItem="vvw-7t-OW1" firstAttribute="bottom" secondItem="yrs-94-2GO" secondAttribute="bottom" constant="362" id="uhM-X7-35A"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countLabel" destination="yrs-94-2GO" id="cJD-4c-80F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6c-5h-bKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
